@@ -1,0 +1,278 @@
+/* ==========================================================================
+   1. ALAPBEÁLLÍTÁSOK & DESIGN
+   ========================================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+h1, h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+/* ==========================================================================
+   2. NAVIGÁCIÓS SÁV (HEADER)
+   ========================================================================== */
+header {
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #b71c1c;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #b71c1c;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #b71c1c;
+}
+
+/* ==========================================================================
+   3. HÍREK & ALOSZTÁLYOK
+   ========================================================================== */
+.hir-kartya {
+    background-color: #2a2a2a;
+    border-left: 5px solid #b71c1c;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.alosztaly-resz {
+    margin-top: 40px;
+}
+
+/* ==========================================================================
+   4. VEZETŐSÉGI KÁRTYÁK & VAJPUHA HOVER EFFEKT (MONOGRAMMAL)
+   ========================================================================== */
+.vezetoseg-container {
+    display: flex;
+    gap: 30px;
+    margin: 40px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vezeto-kartya {
+    background: #1e252b;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+}
+
+/* Monogram kör stílusa */
+.monogram-kor {
+    width: 90px;
+    height: 90px;
+    background: #12171a;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #38444d;
+    color: #b71c1c;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+}
+
+.vezeto-nev {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    transition: color 0.4s ease;
+}
+
+.info-sor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #a0aec0;
+    transition: color 0.4s ease;
+}
+
+.mini-badge {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #b71c1c;
+    color: #fff;
+}
+
+/* --- HOVER SZABÁLYOK --- */
+.vezeto-kartya:hover {
+    background: #ffffff;
+    transform: translateY(-10px);
+    border-color: #ff3333;
+    box-shadow: 0 0 25px rgba(255, 51, 51, 0.6), 0 15px 35px rgba(0, 0, 0, 0.2); 
+}
+
+.vezeto-kartya:hover .vezeto-nev {
+    color: #12171a;
+}
+
+.vezeto-kartya:hover .info-sor {
+    color: #4a5568;
+}
+
+.vezeto-kartya:hover .monogram-kor {
+    background: #f7fafc;
+    border-color: #ff3333;
+    color: #ff3333;
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.4); 
+}
+
+/* ==========================================================================
+   5. RANGLÉTRA TÁBLÁZAT & LÁBLÉC
+   ========================================================================== */
+.rang-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #222;
+}
+
+.rang-tabla th, .rang-tabla td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.rang-tabla th {
+    background-color: #1a1a1a;
+    color: #b71c1c;
+}
+
+.rang-tabla tr:hover {
+    background-color: #2a2a2a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Szervezeti ábra kép doboza */
+.szervezeti-abra-box {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2a2a2a; /* Sötét háttér a kép mögé */
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.szervezeti-abra-box h3 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.szervezeti-abra-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #b71c1c; /* OKF Vörös keret a képnek */
+    display: block;
+    margin: 0 auto;
+    /* Egy kis trükk: ha a kép háttere nagyon fehér, ez kicsit lágyítja a sötét módban */
+    opacity: 0.95; 
+}
+
+/* Az alosztály kártyák alapállapotának finomítása (ha még nem lenne benne) */
+.hir-kartya {
+    transition: all 0.3s ease; /* Ez felel a sima, lágy átmenetért */
+    cursor: pointer;          /* Mutatja a felhasználónak, hogy interaktív elemről van szó */
+    position: relative;
+    top: 0;
+}
+
+/* Hover effekt: Amikor az egér a kártya fölé ér */
+.hir-kartya:hover {
+    transform: translateY(-5px); /* Finoman megemeli a kártyát 5 pixellel */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Mélyebb árnyékot ad neki, amitől térhatású lesz */
+    border-color: #ff0055; /* Ha van kerete, átvált erre a színre (itt a NightCity-s neonszín) */
+    background-color: #1a202c; /* Kicsit világosabb háttér (igazítsd a saját sötét témádhoz) */
+}
+
+/* Opcionális: A kártyán belüli cím (h3) színe is megváltozhat hoverre */
+.hir-kartya:hover h3 {
+    color: #ff0055; /* Neonvörös/rózsaszín kiemelés a címnek */
+}
+
+/* A rendfokozat sorok alapállapota */
+.rang-elem {
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.25s ease; /* Sima átmenet */
+    cursor: default;
+}
+
+/* Hover effekt: amikor az egér a konkrét rendfokozat fölé ér */
+.rang-elem:hover {
+    background-color: rgba(255, 0, 85, 0.1); /* Halvány neonos háttér (10%-os átlátszóság) */
+    transform: translateX(5px); /* Finoman jobbra tolja a rangot, mintha kiválasztanád */
+}
+
+/* A kép (jelvény) külön effektje hover esetén */
+.rang-elem:hover .rang-jelveny {
+    transform: scale(1.15); /* A jelvény 15%-kal nagyobb lesz */
+    filter: drop-shadow(0 0 8px rgba(255, 0, 85, 0.6)); /* Neonos izzást ad magának a jelvénynek */
+    transition: all 0.25s ease;
+}
+
+/* A szöveg kiemelése hover esetén */
+.rang-elem:hover span {
+    color: #ffffff; /* Fehérebbé teszi a nevet */
+    font-weight: bold; /* Félkövér lesz */
+}

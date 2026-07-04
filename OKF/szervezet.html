@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKF - Szervezeti Felépítés</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Kis extra stílus a táblázatban lévő képekhez, hogy szépen igazodjanak a szöveghez */
+        .rang-elem {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+        .rang-elem:last-child {
+            margin-bottom: 0;
+        }
+        .rang-jelveny {
+            height: 24px; /* A jelvények magassága, a stílusodhoz igazíthatod */
+            width: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">NightCity<span>BM OKF</span></div>
+        <nav>
+            <a href="index.html">Főoldal</a>
+            <a href="hirek.html">Hírek</a>
+            <a href="szervezet.html" class="active">Szervezet</a>
+            <a href="tgf.html">Tagfelvétel</a>
+            <a href="allomany.html">Állomány</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 10px;">Szervezeti Felépítés</h1>
+        <p style="text-align: center; color: #a0aec0; max-width: 700px; margin: 0 auto 40px auto;">
+            Az Országos Katasztrófavédelmi Főigazgatóság hierarchikus felépítésű rendvédelmi szerv. A fegyelem és a pontos szolgálati út betartása minden tagunk számára kötelező.
+        </p>
+
+        <h2 style="text-align: center; margin-top: 20px; border-bottom: none;">Főigazgatóság (Vezetőség)</h2>
+        
+        <div class="vezetoseg-container">
+            
+            <div class="vezeto-kartya">
+                <div class="monogram-kor">CW</div>
+                <div class="vezeto-nev">Coren Walker</div>
+                
+                <div class="info-sor">
+                    <span>Rendfokozat:</span>
+                    <span class="mini-badge">Altábornagy</span>
+                </div>
+                <div class="info-sor">
+                    <span>Beosztás:</span>
+                    <span>Főigazgató</span>
+                </div>
+            </div>
+
+            <div class="vezeto-kartya">
+                <div class="monogram-kor">DC</div>
+                <div class="vezeto-nev">David Cooper</div>
+                
+                <div class="info-sor">
+                    <span>Rendfokozat:</span>
+                    <span class="mini-badge">Vezérőrnagy</span>
+                </div>
+                <div class="info-sor">
+                    <span>Beosztás:</span>
+                    <span>Főig. Helyettes, laktanya parancsnok</span>
+                </div>
+            </div>
+
+            <div class="vezeto-kartya">
+                <div class="monogram-kor">N/A</div>
+                <div class="vezeto-nev">N/A</div>
+                
+                <div class="info-sor">
+                    <span>Rendfokozat:</span>
+                    <span class="mini-badge">Dandártábornok</span>
+                </div>
+                <div class="info-sor">
+                    <span>Beosztás:</span>
+                    <span>N/A</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="szervezeti-abra-box">
+            <h3>Hivatalos Szervezeti Felépítés</h3>
+            <img src="felepites.png" alt="Szervezeti Felépítés Ábra" class="szervezeti-abra-img">
+        </div>
+
+        <div class="alosztaly-resz">
+            <h2>Speciális Alosztályok</h2>
+            <div class="hir-kartya">
+                <h3>KMSZ - Katasztrófavédelmi Műveleti Szolgálat</h3>
+                <p>A legmagasabb szintű káresetek irányításáért felelős egység. Tagjai kiemelt riasztási fokozatoknál vonulnak, és átveszik a kárhelyszín parancsnoki feladatait.</p>
+            </div>
+            <div class="hir-kartya">
+                <h3>KML - Katasztrófavédelmi Mobil Labor</h3>
+                <p>Veszélyes anyagok jelenlétével járó baleseteknél, környezeti katasztrófáknál végzendő felderítésre, mintavételre és mérésekre specializálódott egység.</p>
+            </div>
+            <div class="hir-kartya">
+                <h3>Hatósági Osztály</h3>
+                <p>A tűzvédelmi engedélyek kiadásáért, az épületek és telephelyek ellenőrzéséért, valamint a tűzvizsgálatok lefolytatásáért felelős részleg.</p>
+            </div>
+        </div> 
+
+        <div class="alosztaly-resz">
+            <h2>Funkcionális Osztályok és Ügyeletek</h2>
+            <div class="hir-kartya">
+                <h3>Vármegyei Főügyeleti Osztály</h3>
+                <p>A vármegyei szintű szakmai felügyeletért, a készenléti egységek munkájának összehangolásáért és a szervezeti adminisztrációért felelős törzsegység.</p>
+            </div>
+            <div class="hir-kartya">
+                <h3>Vármegyei Műveletirányítási Ügyelet</h3>
+                <p>A segélyhívások fogadását, a riasztások kiadását és a vonuló egységek folyamatos rádiós, valamint koordinációs támogatását végző központ.</p>
+            </div>
+            <div class="hir-kartya">
+                <h3>Informatikai Osztály</h3>
+                <p>A szervezet belső hálózatainak, rádiórendszereinek (EDR), valamint a számítástechnikai és adatbázis-kezelő eszközök karbantartásáért felelős részleg.</p>
+            </div>
+            <div class="hir-kartya">
+                <h3>Műszaki Osztály</h3>
+                <p>A gépjárműfecskendők, különleges szerek és szakfelszerelések folyamatos üzemképességéért, szervizeléséért és logisztikájáért felelős osztály.</p>
+            </div>
+            <div class="hir-kartya">
+                <h3>Költségvetési Osztály</h3>
+                <p>A frakció gazdasági ügyeiért, a felszerelések beszerzéséért, a pénzügyi tervezésért és a tagok illetményeinek adminisztrációjáért felelős háttérosztály.</p>
+            </div>
+        </div>
+
+        <div class="alosztaly-resz">
+            <h2>Rendfokozatok és Állományi kategóriák</h2>
+            <table class="rang-tabla">
+                <thead>
+                    <tr>
+                        <th>Besorolás</th>
+                        <th>Rendfokozatok</th>
+                        <th>Szolgálati feladat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Tábornokok</strong></td>
+                        <td>
+                            <div class="rang-elem"><img src="rangok/altabornagy.png" alt="Altábornagy" class="rang-jelveny"> <span>Altábornagy</span></div>
+                            <div class="rang-elem"><img src="rangok/vezerornagy.png" alt="Vezérőrnagy" class="rang-jelveny"> <span>Vezérőrnagy</span></div>
+                            <div class="rang-elem"><img src="rangok/dandartabornok.png" alt="Dandártábornok" class="rang-jelveny"> <span>Dandártábornok</span></div>
+                        </td>
+                        <td>A frakció legmagasabb szintű stratégiai vezetése, globális döntéshozatal és főigazgatói feladatok.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Főtisztek</strong></td>
+                        <td>
+                            <div class="rang-elem"><img src="rangok/ezredes.png" alt="Ezredes" class="rang-jelveny"> <span>Ezredes</span></div>
+                            <div class="rang-elem"><img src="rangok/alezredes.png" alt="Alezredes" class="rang-jelveny"> <span>Alezredes</span></div>
+                            <div class="rang-elem"><img src="rangok/ornagy.png" alt="Őrnagy" class="rang-jelveny"> <span>Őrnagy</span></div>
+                        </td>
+                        <td>Osztályok és főosztályok vezetése, operatív tervezés, valamint a TGF és panaszok bírálata.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tisztek</strong></td>
+                        <td>
+                            <div class="rang-elem"><img src="rangok/szazados.png" alt="Százados" class="rang-jelveny"> <span>Százados</span></div>
+                            <div class="rang-elem"><img src="rangok/fohadnagy.png" alt="Főhadnagy" class="rang-jelveny"> <span>Főhadnagy</span></div>
+                            <div class="rang-elem"><img src="rangok/hadnagy.png" alt="Hadnagy" class="rang-jelveny"> <span>Hadnagy</span></div>
+                        </td>
+                        <td>Alosztályok vezetése, szolgálati csoportok közvetlen felügyelete és kárhelyszíni parancsnoki feladatok.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Zászlósok</strong></td>
+                        <td>
+                            <div class="rang-elem"><img src="rangok/fotorzszaszlos.png" alt="Főtörzszászlós" class="rang-jelveny"> <span>Főtörzszászlós</span></div>
+                            <div class="rang-elem"><img src="rangok/torzszaszlos.png" alt="Törzszászlós" class="rang-jelveny"> <span>Törzszászlós</span></div>
+                            <div class="rang-elem"><img src="rangok/zaszlos.png" alt="Zászlós" class="rang-jelveny"> <span>Zászlós</span></div>
+                        </td>
+                        <td>Kiemelt helyszíni feladatok végrehajtása, gépjárműfecskendő-parancsnoki beosztások.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tiszthelyettesek</strong></td>
+                        <td>
+                            <div class="rang-elem"><img src="rangok/fotorzsormester.png" alt="Főtörzsőrmester" class="rang-jelveny"> <span>Főtörzsőrmester</span></div>
+                            <div class="rang-elem"><img src="rangok/torzsormester.png" alt="Törzsőrmester" class="rang-jelveny"> <span>Törzsőrmester</span></div>
+                            <div class="rang-elem"><img src="rangok/ormester.png" alt="Őrmester" class="rang-jelveny"> <span>Őrmester</span></div>
+                        </td>
+                        <td>Önálló beosztott tűzoltók, gépjárművezetők, a vonulós állomány gerince.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Országos Katasztrófavédelmi Főigazgatóság - NightLite. Minden jog fenntartva.
+    </footer>
+
+</body>
+</html>

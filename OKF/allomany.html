@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKF - Aktív Állomány</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* A táblázatban lévő képek stílusa és a hover effekt */
+        .rang-elem {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.25s ease;
+            cursor: default;
+            width: fit-content;
+        }
+        .rang-jelveny {
+            height: 24px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Hover effektek a rendfokozatokra a listán belül */
+        .rang-elem:hover {
+            background-color: rgba(255, 0, 85, 0.1);
+            transform: translateX(5px);
+        }
+        .rang-elem:hover .rang-jelveny {
+            transform: scale(1.15);
+            filter: drop-shadow(0 0 8px rgba(255, 0, 85, 0.6));
+        }
+        .rang-elem:hover span {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Osztály badge-ek extra formázása */
+        .osztaly-badge {
+            background-color: #2d3748;
+            color: #e2e8f0;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            border: 1px solid #4a5568;
+            display: inline-block;
+        }
+        
+        tr:hover .osztaly-badge {
+            border-color: #ff0055;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">NightCity<span>BM OKF</span></div>
+        <nav>
+            <a href="index.html">Főoldal</a>
+            <a href="hirek.html">Hírek</a>
+            <a href="szervezet.html">Szervezet</a>
+            <a href="allomany.html" class="active">Állomány</a>
+            <a href="tgf.html">Tagfelvétel</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 10px;">Aktív Állományi Lista</h1>
+        <p style="text-align: center; color: #a0aec0; max-width: 700px; margin: 0 auto 40px auto;">
+            Az Országos Katasztrófavédelmi Főigazgatóság naprakész névjegyzéke, a hierarchia szerint felülről lefelé haladva.
+        </p>
+
+        <div class="alosztaly-resz">
+            <table class="rang-tabla">
+                <thead>
+                    <tr>
+                        <th>Név</th>
+                        <th>Rendfokozat</th>
+                        <th>Osztály / Alosztály</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><strong>Coren Walker</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/altabornagy.png" alt="Altábornagy" class="rang-jelveny">
+                                <span>Altábornagy</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">Főigazgatóság</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>David Cooper</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/vezerornagy.png" alt="Vezérőrnagy" class="rang-jelveny">
+                                <span>Vezérőrnagy</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">Főigazgatóság</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/dandartabornok.png" alt="Dandártábornok" class="rang-jelveny">
+                                <span>Dandártábornok</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">Főigazgatóság</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/ezredes.png" alt="Ezredes" class="rang-jelveny">
+                                <span>Ezredes</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/alezredes.png" alt="Alezredes" class="rang-jelveny">
+                                <span>Alezredes</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/ornagy.png" alt="Őrnagy" class="rang-jelveny">
+                                <span>Őrnagy</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/szazados.png" alt="Százados" class="rang-jelveny">
+                                <span>Százados</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/fohadnagy.png" alt="Főhadnagy" class="rang-jelveny">
+                                <span>Főhadnagy</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/hadnagy.png" alt="Hadnagy" class="rang-jelveny">
+                                <span>Hadnagy</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/fotorzszaszlos.png" alt="Főtörzszászlós" class="rang-jelveny">
+                                <span>Főtörzszászlós</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/torzszaszlos.png" alt="Törzszászlós" class="rang-jelveny">
+                                <span>Törzszászlós</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/zaszlos.png" alt="Zászlós" class="rang-jelveny">
+                                <span>Zászlós</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/fotorzsormester.png" alt="Főtörzsőrmester" class="rang-jelveny">
+                                <span>Főtörzsőrmester</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/torzsormester.png" alt="Törzsőrmester" class="rang-jelveny">
+                                <span>Törzsőrmester</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>N/A</strong></td>
+                        <td>
+                            <div class="rang-elem">
+                                <img src="rangok/ormester.png" alt="Őrmester" class="rang-jelveny">
+                                <span>Őrmester</span>
+                            </div>
+                        </td>
+                        <td><span class="osztaly-badge">N/A</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Országos Katasztrófavédelmi Főigazgatóság - NightLite. Minden jog fenntartva.
+    </footer>
+
+</body>
+</html>

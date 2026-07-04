@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKF - Főoldal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Főoldali Laktanya Háttér (Hero szekció a szövegekkel együtt) */
+        .hero-banner {
+            position: relative;
+            width: 100%;
+            height: 550px; /* A kép magassága a főoldalon */
+            /* A képedet használjuk háttérnek, és teszünk rá egy sötétítést, hogy a szöveg tökéletesen olvasható legyen */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.75)), url('lol.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #ff0055; /* NightCity neonvörös elválasztó csík az alján */
+        }
+
+        /* Főcím stílusa a képen (Élő szöveg) */
+        .hero-cim {
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            font-size: 3.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(255, 0, 85, 0.6), 2px 2px 4px rgba(0,0,0,0.9);
+        }
+
+        .hero-cim span {
+            color: #ff0055; /* Neonvörös kiemelés */
+        }
+
+        /* A kért Tűzoltó jelmondat stílusa (Élő szöveg) */
+        .hero-jelmondat {
+            color: #e2e8f0;
+            font-family: 'Georgia', serif;
+            font-size: 1.8rem;
+            font-style: italic;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+            border-top: 2px solid rgba(255, 0, 85, 0.5);
+            padding-top: 15px;
+            max-width: 800px;
+        }
+
+        /* Kisebb igazítás a tartalomnak a banner alatt */
+        .main-content {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">NightCity <span>BM OKF</span></div>
+        <nav>
+            <a href="index.html" class="active">Főoldal</a>
+            <a href="hirek.html">Hírek</a>
+            <a href="szervezet.html">Szervezet</a>
+            <a href="allomany.html">Állomány</a>
+            <a href="tgf.html">Tagfelvétel</a>
+        </nav>
+    </header>
+
+    <!-- HÁTTÉRKÉP + A RÁÍRT SZÖVEGEK EGYÜTT -->
+    <div class="hero-banner">
+        <h1 class="hero-cim">NightCity <span>BM Katasztrófavédelem</span></h1>
+        <p class="hero-jelmondat">„Istennek dicsőség, Egymásnak segítség”</p>
+    </div>
+
+    <!-- ALSÓ TARTALMI RÉSZ -->
+    <div class="container main-content">
+        <h2>Országos Katasztrófavédelmi Főigazgatóság</h2>
+        <p>Üdvözöljük az OKF hivatalos weboldalán. Szervezetünk elsődleges feladata a lakosság biztonságának garantálása, a tűzesetek felszámolása, valamint a műszaki mentések szakszerű ellátása a város egész területén.</p>
+        
+        <h3 style="margin-top: 30px; color: #ff0055;">"Sors bona, nihil aliud"</h3>
+        <p>Állományunk tagjai a nap 24 órájában készen állnak a riasztásra. Legyen szó kiterjedt gyártűzről, súlyos közúti balesetről vagy veszélyes anyag szivárgásáról, a katasztrófavédelemre mindig lehet számítani.</p>
+    </div>
+
+    <footer>
+        &copy; 2026 Országos Katasztrófavédelmi Főigazgatóság - NightLite. Minden jog fenntartva.
+    </footer>
+
+</body>
+</html>
