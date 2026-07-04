@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKF - Tagfelvétel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* TGF Információs Box */
+        .tgf-info-box {
+            background-color: #1a202c;
+            border: 1px solid #2d3748;
+            border-radius: 8px;
+            padding: 40px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .tgf-info-box h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .tgf-info-box p {
+            color: #a0aec0;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* A TGF Link Gomb stílusa */
+        .tgf-link-gomb {
+            display: inline-block;
+            background-color: #ff0055;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 40px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(255, 0, 85, 0.3);
+        }
+
+        /* Hover effekt a gombra klikkelés előtt */
+        .tgf-link-gomb:hover {
+            background-color: #e0004c;
+            box-shadow: 0 0 25px rgba(255, 0, 85, 0.7);
+            transform: translateY(-3px);
+            color: #ffffff;
+        }
+
+        .tgf-link-gomb:active {
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">NightCity <span>BM OKF</span></div>
+        <nav>
+            <a href="fooldal.html">Főoldal</a>
+            <a href="hirek.html">Hírek</a>
+            <a href="szervezet.html">Szervezet</a>
+            <a href="allomany.html">Állomány</a>
+            <a href="tgf.html" class="active">Tagfelvétel</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 10px;">Tagfelvétel</h1>
+        <p style="text-align: center; color: #a0aec0; max-width: 700px; margin: 0 auto 10px auto;">
+            Csatlakozz a NightCity Katasztrófavédelem kötelékébe!
+        </p>
+
+        <div class="tgf-info-box">
+            <h2>Jelentkezési Lap Kitöltése</h2>
+            <p>
+                A tagfelvételünk jelenleg külső felületen zajlik. A gombra kattintva átirányítunk a hivatalos jelentkezési ívre.<br>
+                Kérjük, hogy a lapot figyelmesen, a valóságnak megfelelően töltsd ki!
+            </p>
+            
+            <a href="https://forms.gle/5xJKYMvjpdZ99ucZ9" target="_blank" class="tgf-link-gomb">Jelentkezés megnyitása</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Országos Katasztrófavédelmi Főigazgatóság - MTA RP. Minden jog fenntartva.
+    </footer>
+
+</body>
+</html>
